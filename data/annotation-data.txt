@@ -1,0 +1,114 @@
+Aula 7 Diagramas de Casos de Uso: Aplicação
+Essa aula é sobre canvas proposta de valor. Que é utilizado para melhor elucidar as dores, ganhos e tarefas do usuário. Além de destacar a proposta de valor da solução. Esse canvas da proposta de valor é importante para verificar os requisitos funcionais, que servem para criar os casos de uso.
+Ainda nesse aula, tivemos acesso a um diagrama de casos de uso sobre um ebook. Onde o usuário leitor pode buscar, comprar e ler livros e cada um desses casos de uso possuem casos de uso independentes que o compõem. Como na leitura, que o usuário pode marcar palavras ou tomar notas e na compra ele precisa estar logado na loja, entre outras. Além disso, existem os atores operadora de cartão, que é responsável junto com o usuário leitor pelo caso de uso comprar livro.
+
+Aula 6 – Diagrama de Casos de Uso: Conceito
+O que é um diagrama de casos de uso?
+É uma forma de comunicação universal que busca detalhar usuários e a forma com que eles se comunicam com o sistema.
+O que são atores?
+Um ator não é necessariamente uma pessoa. Pode ser um software, um hardware, um sensor, entre outros, que está externo ao sistema que está sendo desenvolvido. Quando falamos de ator, nos remetemos a papel, então são o ator é um papel pode assumir quando interage com o software. Por exemplo, papel de administrador de escola, ou de professor, ou de aluno.
+A notação para atores é a mesma para usuários, outros softwares ou hardwares.
+
+Como identificar um ator?
+Pense quem pode interagir com o sistema, seja alterando informações, fornecendo informações, consultando, seja ele software, como uma API, seja um sensor ou um usuário humano. Mapeie quem estará em contato com o sistema.
+Como definir um caso de uso?
+Um caso de uso é a execução completa de uma operação que entregue valor ao usuário. Então, para um usuário que precisa de dinheiro e vai ao banco, o caso de uso deve representar o ato de obter o dinheiro.
+Os casos de uso são requisitos funcionais, mas nem todo requisito funcional deve se tornar um caso de uso. Um requisito pode estar em um nível de granularidade mais alto e por tanto, ser quebrado em vários outros casos de uso.
+Como representar um caso de uso no diagrama?
+O caso de uso é representado por uma elipse, com seu nome dentro da forma ou logo abaixo. O caso de uso deve representar uma ação, então deve ser escrito com verbos no infinitivo.
+Relacionamentos no diagrama de casos de uso:
+A relação entre atores e casos de uso indica uma interação entre ator e caso de uso. Essa interação pode ser tanto no sentido ator agindo ou do ator estar recebendo uma resposta do caso de uso que foi iniciado por outro ator. Pode ou não ter uma seta. A seta indica o sentido de comunicação ou quem iniciou a ação.
+
+Pode também existir relação entre casos de uso. As relações entre casos de uso são separadas entre Dependências e Generalização/especialização
+•	Dependências: As dependências podem ser de dois tipos. As de inclusão e as de extensão
+o	Inclusão: São sinalizadas por <<include>>
+	Toda vez que um caso de uso que inclui for executado, o caso de uso incluído também o será executado.
+	Fazendo uma analogia com programação, ela funciona como uma função, onde o caso de uso incluído é reutilizado em outros casos de uso.
+	Ele é representado no diagrama por uma seta pontilhada com o escrito de que é <<include>>
+o	Extensão: São sinalizadas por <<extend>>
+	Diferente da inclusão, o caso de uso que é estendido pode ser executado ou não. É uma relação de opção.
+	Ele é representado por uma seta pontilhada que parte do caso de uso que estende para o que é estendido. Ou seja, do independente para o dependente. A seta também é nomeada com <<extend>>
+•	Generalização/especialização:
+o	Funciona da mesma forma que a herança em POO. Um caso de uso geral, passa suas características para os casos de uso mais especializados.
+o	A especialização é representada por uma linha que começa no caso de uso especializado e vai até o caso de uso geral. Ao fim da linha é posta uma seta aberta.
+o	Em generalização é possível também fazer generalização entre atores. Um ator especializado herda todos os casos de uso e relacionamentos do ator geral. A representação é a mesma que a utilizada para casos de uso, uma linha do especializado para o geral com uma seta aberta no
+
+
+
+Aula  4 – Elicitação de Requisitos de Software
+O que é elicitar requisitos?
+O processo de elicitar requisitos é um momento onde o agente de elicitação colhe informações seja com usuário ou documentação e avalia de forma crítica essas informações. Ou seja, nem tudo que se diz ou tudo que se documenta deve virar requisito. É preciso peneirar as informações e extrair os requisitos.
+O processo de elicitar requisitos é uma constante de “ E SE ACONTECER ISSO... O QUE O SISTEMA DEVE FAZER? E SE NÃO ACONTECER ISSO... O QUE O SISTEMA DEVE FAZER?”
+Obs1: As vezes o usuário não consegue dizer o que exatamente tem interesse, as vezes o usuário não tem interesse em falar os requisitos por n fatores (inclusive manutenção de poder). Então, escolha a técnica certa para elicitar os requisitos de forma suficiente para as outras fases de desenvolvimento.
+Quais são as técnicas de elicitação de requisitos conhecidas?
+Entrevista:
+A entrevista permite que o usuário se sinta como parte atuante no desenvolvimento do software. Com ela é possível ter um encontro cara a cara, obtendo informações apenas presentes em sua memória, além de conseguir informações formais e informais do cotidiano, que podem afetar os requisitos levantados.
+A entrevista deve ter um escopo, então entenda o contexto anteriormente, se possível, e então estabeleça um script a ser seguido. Contudo, não fique preso ao script. Dê margem as falas do entrevistado e caso as coisas saiam do caminho esperado, tente retornar ao escopo. Não crie perguntas de SIM e NÃO, a entrevista proporciona um momento importante para coleta de dados qualitativos, que um formulário quantitativo de SIMs e NÃOs não conseguiria proporcionar.
+Aqui seguem algumas dicas de como estabelecer uma boa entrevista, conquistando ótimos pontos para o desenvolvimento do seu plano de elicitação de requisitos:
+conquiste a confiança se apresentando e explicando claramente a finalidade do encontro; tome notas durante a entrevista ou grave-a (se permitido); deixe para analisar criticamente depois (não corrija falhas, faça críticas ou discuta); inicie com questões mais abertas, tipo “como é o trabalho que você realiza?”; evite termos muito técnicos e tente se aproximar do jargão da área; evite perguntas com respostas sim/não; se a entrevista se desviar, reconduza para o fim programado; esclareça as possíveis preocupações por parte do entrevistado; dê abertura para novos contatos, da sua parte e da parte do entrevistado; valide as informações obtidas com relação ao objetivo previamente estipulado; e manter uma postura corporal receptiva, ter paciência, dar feedback verbal e questionar pontos que não ficaram claros
+
+
+
+Aula 3 – Requisitos de Software
+Quais são características interessantes de bons requisitos?
+O requisito deve ser focado no problema, ou focado na satisfação ou imposição, ou focado na representação documentada.
+Requisito funcional:
+É um requisito focado em cumprir um objetivo estimado pelo stakeholder para resolução de um problema.
+Requisito de Qualidade (Requisitos não funcionais):
+São focados no como o software opera. Focado em desempenho, performance, usabilidades, entre outros.
+Restrições (Requisitos de processo e projeto):
+Não são requisitos funcionais. São requisitos sobre os quais a equipe de desenvolvimento não tem controle. Então, é tudo aquilo que interfere diretamente no desenvolvimento do software, mas que a equipe não tem gerência. Como tecnologias, prazos, custos, processos de desenvolvimento, entre outros.
+Requisitos de Negócio:
+Os requisitos de negócio norteiam o processo de desenvolvimento, no sentido de que quando for solicitado uma alteração de requisito, ou quando um requisito estiver sendo desenvolvido, ele estará seguindo os requisitos de negócio? São uma espécie de princípios dos requisitos. Ou seja, os requisitos funcionais, não funcionais, de processo e de projeto, seguem os princípios de negócio? Se sim, então que continue.
+Requisitos de sistema:
+O requisito funcional se refere a ação do software a uma determinada entrada. O requisito de sistema é mais abrangente. Ele identifica uma ação, mas em todo o sistema. Por exemplo, em um sistema que utiliza sensores de presença, o requisito de sistema englobará conceitos como o hardware, software e também possíveis processos a serem seguidos.
+Quais são características de bons requisitos?
+
+Completo	o requisito está especificado de forma completa e possibilita que o desenvolvedor o implemente.
+Correto	o requisito reflete o que o usuário, cliente ou seus representantes desejam.
+Único	o requisito descreve uma única capacidade, característica, restrição ou atributo de qualidade
+Viável	o requisito é viável técnica e financeiramente para ser implementado, de acordo com as restrições do projeto.
+Necessário	o requisito tem um motivo de existir, que é representado pelo seu relacionamento com uma fonte de informação e com um objetivo de negócio.
+Priorizado	o requisito tem uma prioridade atribuída para que possa ser alocado a uma versão de software
+Não ambíguo	O requisito não contém ambiguidades que levem os stakeholders a interpretá-lo de forma diferente
+Verificável	O requisito pode ser verificado posteriormente à sua implementação
+Conforme	O requisito está em conformidade com os padrões de especificações estabelecido, se houver.
+
+Aula 2 – Etapas na Engenharia de Requisitos
+O que é a Elicitação de Requisitos?
+Nessa etapa do processo de desenvolvimento de software é feita a investigação dos requisitos. Essa investigação é feita a partir de comunicação direta com os stakeholders.  Uma comunicação superficial, pode levar a requisitos mal-feitos.
+É possível utilizar várias técnicas para acessar as informações desde entrevistas, reuniões, histórias de usuários, sistemas legados,  leitura de documentação, entre outros.
+Cultive boas práticas na elicitação de requisitos:
+Identifique as fontes de informação, construa um arcabouço teórico sobre o assunto cujo sistema está envolvido, identifique os objetivos a serem alcançados com a utilização do sistema, planeje bem as atividades tanto cronograma, quanto quais técnicas serão utilizadas. E identifique riscos da elicitação de requisitos.
+Como validar os requisitos?
+A validação deve ser feita tanto pelos stakeholders, quanto pela equipe de desenvolvimento. Isso porque o requisito pode ter ficado claro para quem já conhece o domínio e para o desenvolvedor, não fique tão claro. E é um processo de validação final dos requisitos por parte dos stakeholders. E para fazer isso, é possível fazer workshops, checklists, casos de teste, entre outros.
+Por que gerenciar requisitos?
+Através do gerenciamento é possível estabelecer técnicas para rastreamento dos requisitos e analisar o impacto de uma solicitação de mudança em um requisito.
+
+Aula 1 – Fundamentos da Engenharia de Requisitos
+
+O que é um requisito?
+O requisito é uma capacidade do software em solucionar um problema do usuário.
+Qual a importância do dimensionamento dos requisitos?
+Independente da metodologia utilizada na empresa (ágil ou tradicional), um dimensionamento ruim de requisitos pode levar a insatisfação e resultados pouco acurados. A baixa precisão dos requisitos pode também aumentar a carga de retrabalhos, e o custo para alteração do requisito é maior a medida que ele chega próximo da entrega. Então, uma boa definição de requisitos proporciona uma boa documentação para os desenvolvedores da solução e reduz os riscos de retrabalhos de requisitos mal dimensionados.
+Quais problemas podem ser encontrados em um Requisito?
+O requisito quando está incompleto, contém ambiguidade, quando ele é conflituoso com outros requisitos, muito abrangente e quando é tecnicamente inviável de ser implementado, dizemos que esse requisito está mal dimensionado.
+O que pode levar a um mal dimensionamento de requisito?
+Quando o negócio e o escopo do projeto não foram definidos claramente, isso pode causar confusão no momento de definição dos requisitos. Clientes sem tempo para trabalhar com a equipe dos requisitos, a ausência de usuários representativos (usuário que vai realmente utilizar o sistema) e a incapacidade de definir qual requisito é crítico ou não são fatores que causam problemas na criação dos requisitos.
+Foco apenas na aparência da solução e não em comportamento pode ser um grande problema, a perda do histórico das mudanças nos requisitos, também podem causar problemas para criar um requisito.
+De onde surgem os requisitos?
+Os primeiros requisitos surgem a partir de uma necessidade de negócio. Por exemplo: Precisamos ter de gerenciar o nosso estoque para que consigamos comprar alimentos que estão perto de acabar. Nesse exemplo, sabemos apenas a necessidade de negócio, a partir dessa necessidade começamos a elucidar os requisitos funcionais mais amplos, por exemplo: O sistema deve ter um alerta que emita avisos quando o estoque de alimentos perecíveis chegar a 15% do estoque máximo possível.
+Além dos requisitos funcionais genéricos, podem surgir os requisitos do projeto que podem ser tempo, investimento, orçamento, entre outros. E os requisitos de processo, que são restrições a forma como (processo) o de desenvolvimento do projeto será efetuada.
+Assim, com requisitos funcionais amplos, de projeto e de processo podemos definir a viabilidade de dar início ao desenvolvimento da solução.
+Fase de Desenvolvimento
+A fase de desenvolvimento compreende tudo. Desde elaboração de requisitos a implantação de software.
+Mas o desenvolvimento tem requisitos?
+Sim. Na fase de desenvolvimento tem a elaboração de requisitos funcionais. Como dito anteriormente, o requisito funcional da fase de concepção é um requisito com granularidade alta. Ou seja, são requisitos mais amplos, que norteiam os requisitos de projeto e processo. Agora, na fase de desenvolvimento, podemos intensificar as atividades de criação dos requisitos funcionais, quebrando os requisitos da fase de concepção em requisitos mais descritivos e que vão alimentar o processo de desenvolvimento do software.
+O que é a fase de Análise e Design dentro do desenvolvimento?
+Essa é a fase que tendo em mãos os requisitos, é possível então dimensionar a arquitetura que será utilizada, interfaces de comunicação entre componentes do software e o dimensionamento dos próprios componentes.
+
+
+
+
+
+
